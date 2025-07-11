@@ -1,21 +1,20 @@
-/* Estilo para el navbar */
-.navbar-custom {
-    background-color: #ffae19;
+/* Navbar personalizado completo */
+.navbar-custom1 {
+    background-color: #004f92 !important; /* Fondo azul */
+    border-color: #003366 !important;
 }
 
-/* Estilo para el logo */
-.navbar-brand img {
-    height: 100%;
-    max-height: 100%;
-    margin-top:-8px;
+/* Links del menú (productos, contacto, etc.) */
+.navbar-custom .navbar-nav > li > a {
+    color: #fff !important; /* Texto blanco */
 }
 
-/* Estilo para el ícono del menú desplegable */
-.navbar-dropdown-toggle {
-    font-size: 20px;
-    color: #333;
+/* Hover en los links */
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #ddd !important;
+    background-color: transparent !important;
 }
-
 /* Footer personalizado */
 .footer-custom {
     background-color: #000;
@@ -151,3 +150,8 @@
     transform: scale(1.1);
 }
 
+/* Estilo para cabecera de tabla con fondo negro */
+.table-header-black {
+    background-color: black;
+    color: white;
+}

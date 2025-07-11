@@ -1,0 +1,59 @@
+{% extends "contenido/estructura.html" %}
+{% load static %}
+
+{% block contenido %}
+    <!-- Encabezado -->
+    <div class="page-content">
+        <div class="page-header">
+            <div class="page-title">
+                <h3>Información del pedido</h3>
+                <p><strong>Número de pedido:</strong> 1</p>
+                <p><strong>Nombre del comprador:</strong> Lorenzo Pineda</p>
+            </div>
+        </div>
+
+        <!-- Tabla de productos -->
+        <table class="table table-bordered table-striped" style="margin: 0 auto; width: 90%;">
+            <thead class="table-header-black">
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="" alt="Rubik Inteligente" style="width: 100px;"></td>
+                    <td>Rubik Inteligente con luces</td>
+                    <td>1</td>
+                    <td>$350.00</td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Bloques de Madera Didácticos" style="width: 100px;"></td>
+                    <td>Bloques de Madera Didácticos</td>
+                    <td>2</td>
+                    <td>$480.00</td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Juego de engranes interactivo" style="width: 100px;"></td>
+                    <td>Juego de engranes interactivo</td>
+                    <td>1</td>
+                    <td>$275.00</td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Circuito eléctrico básico para niños" style="width: 100px;"></td>
+                    <td>Circuito eléctrico básico para niños</td>
+                    <td>1</td>
+                    <td>$399.00</td>
+                </tr>
+                <tr>
+                    <td><img src="" alt="Tablero sensorial Montessori" style="width: 100px;"></td>
+                    <td>Tablero sensorial Montessori</td>
+                    <td>1</td>
+                    <td>$520.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

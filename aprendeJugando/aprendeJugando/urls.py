@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from contenido import views
+from productos import views as views_productos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.principal, name="Principal"),
+    path('pedidos/', views_productos.pedidos, name="Pedidos"),
+    path('pedidos/1/', views_productos.pedido_detalle, name="PedidoDetalle"),
+
 ]

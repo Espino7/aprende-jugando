@@ -1,0 +1,75 @@
+{% extends "contenido/estructura.html" %}
+{% load static %}
+    
+{% block contenido%}
+    <!-- Contenido Principal-->
+		<!--Encabezdo -->
+            <div class="page-content">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>Historial de pedidos
+                        <small>Aqui se muestran los pedidos hechos por el sitio web</small></h3>
+                    </div>
+                </div>
+            </div>
+		<!-- /Encabezado-->
+
+		<!-- Tabla comentarios -->
+        <div class="d-flex justify-content-center">
+            <table class="table table-bordered table-striped w-auto">
+                <thead style="background-color: black; color: white;">
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre del cliente</th>
+                        <th></th>
+                    </tr>
+                </thead>
+            <tbody>
+                <tr>
+                    <td class="muted">1</td>
+                    <td class="muted">Lorenzo Pineda</td>
+                    <td class="text-center">
+                        <a href="{% url 'PedidoDetalle' %}">Ver</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="muted">2</td>
+                    <td class="muted">Marco Pineda</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+                <tr>
+                    <td class="muted">3</td>
+                    <td class="muted">Isabel Duarte</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+                <tr>
+                    <td class="muted">4</td>
+                    <td class="muted">Fernando López</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+                <tr>
+                    <td class="muted">5</td>
+                    <td class="muted">Camila Torres</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+                <tr>
+                    <td class="muted">6</td>
+                    <td class="muted">Jorge Herrera</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+                <tr>
+                    <td class="muted">7</td>
+                    <td class="muted">Valeria Jiménez</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+                <tr>
+                    <td class="muted">8</td>
+                    <td class="muted">Andrés Salgado</td>
+                    <td class="text-center"><a href="#">Ver</a></td>
+                </tr>
+            </tbody>
+
+		</table>
+		<!-- /tabla -->
+	<!-- /Contenido Principal-->
+{% endblock %}
